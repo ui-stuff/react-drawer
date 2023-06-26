@@ -23,7 +23,14 @@ export default [
             commonjs(),
             typescript({ tsconfig: './tsconfig.json' }),
             postcss({
-                plugins: []
+                config: {
+                    path: './postcss.config.js',
+                },
+                extensions: ['.css'],
+                minimize: true,
+                inject: {
+                    insertAt: 'top',
+                },
             })
         ],
     },
