@@ -8,9 +8,15 @@ export default meta
 type Story = StoryObj<typeof Drawer>
 
 export const RightDrawer: Story = {
-    args: {},
+    args: {
+        isOpen: true,
+        position: 'right',
+    },
 }
 
 export const LeftDrawer: Story = {
-    args: {},
+    args: {
+        isOpen: true,
+        position: 'left',
+    },
 }

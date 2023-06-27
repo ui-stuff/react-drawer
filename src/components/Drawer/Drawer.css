@@ -1,3 +1,15 @@
 .drawer {
-    @apply bg-cyan-600;
+    @apply bg-white text-gray-800 md:w-[300px] w-full h-screen;
+}
+.drawer-left {
+    @apply absolute left-0;
+}
+.drawer-right {
+    @apply absolute right-0;
+}
+.overlay {
+    @apply fixed top-0 right-0 bottom-0 left-0 bg-black bg-opacity-50 w-screen h-screen;
+}
+.close-button {
+    @apply absolute top-2 right-2 cursor-pointer;
 }
